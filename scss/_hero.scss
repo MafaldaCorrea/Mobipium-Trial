@@ -1,0 +1,76 @@
+.hero {
+	background-repeat:no-repeat;
+    background-size:cover;
+    background-position:top;
+    height:488px;
+
+    .container {
+        //BRANDS LOGO (TO BE CHANGED TO IMAGE)
+    	p {
+			font-size: 30px;
+			line-height: 106px;
+			color: #ffffff;
+			font-family: $secondary-font;
+			@include bold;
+			text-align: center;
+		}
+
+		h1 {
+			font-size: 46px;
+			line-height: 54px;
+			color: #ffffff;
+			@include bold;
+			text-align: center;
+			margin:20px auto;
+
+			strong {
+				font-size:50px;
+			}
+		}
+
+		h2 {
+			color:$pale-green;
+			font-size: 36px;
+			line-height: 41px;
+			text-align: center;
+			margin:20px auto;
+		}
+    }
+
+    //HERO FOR MOBILE
+
+    @include mq (0,420px) {
+    	height:375px;
+
+    	.container {
+    		p {
+    			font-size:20px;
+    			line-height:60px;
+    			padding-top:20px;
+    		}
+
+    		h1 {
+    			font-size:30px;
+    			line-height:33px;
+    			margin:20px auto;
+
+    			strong {
+    				font-size:33px;
+    			}
+    		}
+
+    		h2 {
+    			font-size: 29px;
+				line-height: 32px;
+    		}
+
+    		.cta {
+    			font-size:17px;
+    			line-height:52px;
+    			padding:0 25px;
+
+    		}
+    	}
+    }
+	
+}

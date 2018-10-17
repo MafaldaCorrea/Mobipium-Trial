@@ -1,0 +1,53 @@
+$primary-font: 'Verdana',sans-serif;
+$secondary-font: 'Arial', sans-serif;
+$pale-green:#87fda7;
+
+html, body {
+	font-family:$primary-font;
+	text-transform:uppercase;
+	padding-bottom:25px;
+}
+
+a {
+	text-decoration:none;
+}
+
+//CLASS CONTAINER CONFIG
+
+.container {
+    max-width:450px;
+    margin:0 auto;
+
+    @include mq (0,420px) {
+    	max-width:300px;
+    }
+}
+
+
+
+//CLASS FOR CTA BUTTONS
+
+.cta {
+	background:$pale-green;
+	font-family:$primary-font;
+	@include bold;
+	display:block;
+	font-size:24px;
+	line-height:53px;
+	padding: 0 30px;
+	border:none;
+	text-transform:uppercase;
+	margin:0 auto;
+	transition:all 0.6s ease;
+
+	a {
+		color:#000;
+	}
+
+	&:hover {
+		transform:scale(1.05);
+		transition:all 0.6s ease;
+		border: 1px solid #68c180;
+		box-shadow: 0px 1px 0px rgba(0,0,0,0.47);
+	}
+}
